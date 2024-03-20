@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #b19269; /* Ten rengi açık bir renk */
+    color: rgb(236, 185, 117);
+  }
+  ;
+  .header, .footer {
+    background-color: #6d5046; /* Kahverengi */
+  }
+  .article:hover .overlay {
+    background-color: #ae8d73; /* Ten rengi açık bir renk */
+  }
+  
+  .article {
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    background-color: #795548; /* Kahverengi */
+  }
+  
+  .article:hover .overlay {
+    opacity: 1;
+  }
